@@ -3,14 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30px;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  fill: red !important;
 }
 
 .App-header {
@@ -28,11 +23,97 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-menu {
+  padding: 1rem 0 !important;
+}
+
+.searchbar-btn,
+.searchbar-search {
+  border-color: rgb(230, 230, 230) !important;
+  background-color: #ffffff !important;
+  padding: 12px 15px;
+  color: rgb(113, 113, 113);
+  font-size: 13px !important;
+}
+
+.searchbar-group {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px !important;
+  border-radius: 12px !important;
+}
+
+.searchbar-group:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px !important;
+  color: rgb(34, 34, 34);
+}
+
+.brand-logo {
+  color: red !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.05em;
+}
+
+.signup-btn {
+  -moz-box-align: center !important;
+  -moz-appearance: none !important;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+  border: 1px solid rgb(235, 235, 235) !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 18px !important;
+  outline: currentcolor none medium !important;
+  overflow: visible !important;
+  padding: 0px 16px !important;
+  text-align: inherit !important;
+  align-items: center !important;
+  border-radius: 21px !important;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px !important;
+  height: 42px !important;
+  transition: box-shadow 0.2s ease 0s !important;
+  color: rgb(34, 34, 34) !important;
+  margin-left: 0.5rem !important;
+}
+
+.signup-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px !important;
+}
+
+.navlink-btn {
+  -moz-appearance: none !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 12px !important;
+  z-index: 1 !important;
+  color: rgb(34, 34, 34) !important;
+  border-radius: 21px !important;
+  margin-left: 0.5rem !important;
+}
+
+.navlink-btn:hover,
+.navlink-dropdown:hover {
+  background-color: rgb(247, 247, 247) !important;
+}
+
+.navlink-dropdown {
+  -moz-appearance: none !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 5px !important;
+  z-index: 1 !important;
+  color: rgb(34, 34, 34) !important;
+  border-radius: 21px !important;
+}
+
+.dropdown-menu {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px !important;
+  border: none !important;
+}
+
+.default-icon {
+  height: 17px;
+  width: auto !important;
 }

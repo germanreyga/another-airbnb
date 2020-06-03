@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import logo from "./logo.svg";
+import NavMenu from "./components/Navbar/NavMenu";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  let languages = [
+    { languageName: "English", languageLink: "#english" },
+    { languageName: "Spanish", languageLink: "#spanish" },
+    { languageName: "Chinese", languageLink: "#chinese" },
+  ];
+
+  return <NavMenu languages={languages} logo={logo}></NavMenu>;
 }
 
 export default App;
