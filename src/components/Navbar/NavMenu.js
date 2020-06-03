@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, NavDropdown, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import BrandLogo from "./BrandLogo";
 import SearchBar from "./SearchBar";
 import globe from "../../imgs/globe.svg";
@@ -13,7 +13,7 @@ function NavMenu(props) {
   ];
 
   return (
-    <Navbar expand="lg" className="nav-menu shadow-sm">
+    <Navbar expand="lg" className="nav-menu shadow-sm fixed-top bg-white">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse
         id="basic-navbar-nav"

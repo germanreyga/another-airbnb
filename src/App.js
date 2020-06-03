@@ -15,7 +15,10 @@ function App() {
   return (
     <>
       <NavMenu languages={languages} logo={logo} />
-      <StayList />
+
+      <StayList className="sidebar-item" />
+
+      <div>HOLAAAAAAA</div>
     </>
   );
 }

@@ -8,23 +8,8 @@
   fill: red !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
-}
-
-.nav-menu {
-  padding: 1rem 0 !important;
 }
 
 .searchbar-btn,
@@ -117,4 +102,31 @@
 .default-icon {
   height: 17px;
   width: auto !important;
+}
+
+.sidebar-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sticky-item {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav-menu {
+  padding: 1rem 0 !important;
+}
+
+.box-container {
+  margin: 0px !important;
+  max-width: none !important;
+}
+
+.r-pad-0 {
+  padding-right: 0px !important;
 }
