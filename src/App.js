@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import logo from "./logo.svg";
 import NavMenu from "./components/Navbar/NavMenu";
-import StayList from "./components/Stays/StayList";
+import StayList from "./components/Stays/Stays";
 
 function App() {
   let languages = [
@@ -15,8 +15,9 @@ function App() {
   return (
     <>
       <NavMenu languages={languages} logo={logo} />
-
-      <StayList className="sidebar-item" />
+      <div className="page-container">
+        <StayList className="sidebar-item" />
+      </div>
 
       <div>HOLAAAAAAA</div>
     </>

@@ -11,14 +11,12 @@ function LocationMap(props) {
   };
 
   return (
-    <div className="sticky-item">
-      <div style={{ height: "100vh", width: "100%" }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "" }}
-          defaultCenter={location.center}
-          defaultZoom={location.zoom}
-        ></GoogleMapReact>
-      </div>
+    <div style={{ height: "100vh", width: "100%" }} className="sticky-item">
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "" }}
+        defaultCenter={location.center}
+        defaultZoom={location.zoom}
+      ></GoogleMapReact>
     </div>
   );
 }

@@ -105,9 +105,9 @@
 }
 
 .sidebar-item {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100%;
   height: 100%;
 }
@@ -115,7 +115,7 @@
 .sticky-item {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 80px !important;
 }
 
 .nav-menu {
@@ -129,4 +129,7 @@
 
 .r-pad-0 {
   padding-right: 0px !important;
+}
+
+.page-container {
 }
