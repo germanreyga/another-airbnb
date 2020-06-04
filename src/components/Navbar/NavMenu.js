@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, Col, Row } from "react-bootstrap";
+import { Navbar, Nav, Container, Col } from "react-bootstrap";
 import BrandLogo from "./BrandLogo";
 import SearchBar from "./SearchBar";
 import globe from "../../imgs/globe.svg";
@@ -16,7 +16,7 @@ function NavMenu(props) {
     <Container className="navbar-container sticky-top">
       <Navbar
         expand="lg"
-        className="nav-menu shadow-sm  bg-white row d-flex justify-content-between"
+        className="nav-menu shadow-sm bg-white row d-flex justify-content-between"
       >
         <Col sm={12} md={2} className="text-center">
           <BrandLogo logo={props.logo} className="ml-5" />
