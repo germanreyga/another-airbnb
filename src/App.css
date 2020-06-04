@@ -141,11 +141,18 @@
 .sticky-item {
   position: -webkit-sticky;
   position: sticky;
-  top: 80px !important;
+  top: 90px !important;
+}
+.sticky-price-card {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px !important;
 }
 
 .nav-menu {
   padding: 1rem 0 !important;
+  min-height: 90px;
+  max-height: 90px;
 }
 
 .box-container {

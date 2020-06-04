@@ -24,7 +24,7 @@ function NavMenu({ logo, languages }) {
         <Col sm={12} md={5} className="text-center">
           <SearchBar buttonLabels={buttonLabels} />
         </Col>
-        <Col sm={12} md={3} className="d-none d-md-block">
+        <Col sm={12} md={3} className="d-none d-lg-block">
           <Nav>
             <LanguageItems languages={languages} img={globe} />
             <Nav.Link href="#help" className="navlink-btn ml">

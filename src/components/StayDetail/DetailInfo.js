@@ -42,12 +42,22 @@ function DetailInfo({ type, description }) {
             title="Free cancellation for 48 hours"
             description="After that, cancel before 4:00 PM on Aug 4 and get a full refund, minus the first 30 days and the service fee."
           />
+          <PropertyCharacteristic
+            icon={home1}
+            title="Entire home"
+            description="You’ll have the apartment to yourself."
+          />
+          <PropertyCharacteristic
+            icon={star}
+            title="Free parking on premises"
+            description="This is one of a few places in the area that has this feature."
+          />
           <hr />
           <Arrangements />
         </Col>
-        <Col xs={12} md={5}>
+        <Col xs={12} md={5} className="p-5">
           <div className="sidebar-item">
-            <div className="sticky-item">
+            <div className="sticky-price-card">
               <PriceCard />
             </div>
           </div>
