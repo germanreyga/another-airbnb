@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import StarRating from "../StayDetail/StarRating";
 
-function SingleResult(props) {
-  const property = props.property;
+function SingleResult({ property }) {
+  const propProperty = property;
   const history = useHistory();
 
   function goToDetail() {
@@ -17,23 +17,26 @@ function SingleResult(props) {
         <Row>
           <Col xs={12} md={4} className="text-center">
             <img
-              src={property.imgsUrls[0]}
+              src={propProperty.imgsUrls[0]}
               alt="prop-img"
-              className="property-img"
+              className="propProperty-img"
             ></img>
           </Col>
           <Col xs={12} md={4} className="mt-2">
-            <div className="prop-type">{property.type}</div>
-            <div className="prop-title">{property.title}</div>
+            <div className="prop-type">{propProperty.type}</div>
+            <div className="prop-title">{propProperty.title}</div>
             <div className="prop-description">
-              {property.description.join(" · ")}
+              {propProperty.description.join(" · ")}
             </div>
           </Col>
           <Col xs={12} md={4} className="text-right">
-            <StarRating rating={property.rating} reviews={property.reviews} />
+            <StarRating
+              rating={propProperty.rating}
+              reviews={propProperty.reviews}
+            />
             <br />
             <div className="prop-price text-right">
-              ${property.price.toLocaleString("en-US")} MXN /
+              ${propProperty.price.toLocaleString("en-US")} MXN /
               <span class="font-weight-light">month</span>
             </div>
           </Col>

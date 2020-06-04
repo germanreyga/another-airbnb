@@ -1,5 +1,6 @@
 import React from "react";
 import DetailPhotos from "./DetailPhotos";
+import DetailInfo from "./DetailInfo";
 
 function StayDetail() {
   const property = {
@@ -27,14 +28,15 @@ function StayDetail() {
   };
 
   return (
-    <div>
+    <>
       <DetailPhotos
         photos={property.imgsUrls}
         title={property.title}
         rating={property.rating}
         reviews={property.reviews}
       />
-    </div>
+      <DetailInfo type={property.type} description={property.description} />
+    </>
   );
 }
 

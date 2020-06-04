@@ -3,8 +3,8 @@ import { NavDropdown } from "react-bootstrap";
 import LanguageButton from "./LanguageButton";
 import MenuImage from "./MenuImage";
 
-function LanguageItems(props) {
-  let languageItems = props.languages.map((languageInfo, index) => {
+function LanguageItems({ languages, img }) {
+  let languageItems = languages.map((languageInfo, index) => {
     return (
       <LanguageButton
         key={index}
@@ -17,7 +17,7 @@ function LanguageItems(props) {
   return (
     <>
       <NavDropdown
-        title={<MenuImage img={props.img}></MenuImage>}
+        title={<MenuImage img={img}></MenuImage>}
         id="basic-nav-dropdown"
         className="navlink-dropdown"
       >

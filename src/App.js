@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StayList from "./components/Stays/Stays";
 import StayDetail from "./components/StayDetail/StayDetail";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   let languages = [
@@ -19,6 +20,7 @@ function App() {
     <>
       <NavMenu languages={languages} logo={logo} />
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/">
             <StayList />

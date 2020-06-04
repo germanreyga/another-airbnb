@@ -1,7 +1,7 @@
 import React from "react";
 
-function FilterButtons(props) {
-  const buttonLabels = props.labels;
+function FilterButtons({ labels }) {
+  const buttonLabels = labels;
 
   const buttons = buttonLabels.map((label, index) => {
     return (

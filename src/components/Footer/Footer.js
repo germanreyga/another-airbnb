@@ -10,16 +10,16 @@ function Footer() {
               <span className="text-bold">About</span>
               <li>Diversity & Belonging</li>
               <li>Trust & Safety</li>
-              <li>Airbnb Citizen</li>
+              <li>Windbnb Citizen</li>
               <li>Newsroom</li>
             </ul>
           </div>
           <div className="col-3">
             <ul>
               <span className="text-bold">Community</span>
-              <li>Airbnb Magazine</li>
-              <li>Airbnb Associates</li>
-              <li>Airbnb for Work</li>
+              <li>Windbnb Magazine</li>
+              <li>Windbnb Associates</li>
+              <li>Windbnb for Work</li>
               <li>Invite friends</li>
               <li>Gift cards</li>
               <li>Careers</li>
@@ -46,7 +46,7 @@ function Footer() {
           </div>
         </div>
         <hr />
-        <div className="pb-4">© 2020 Airbnb, Inc. All rights reserved</div>
+        <div className="pb-4">© 2020 Windbnb, Inc. All rights reserved</div>
       </div>
     </footer>
   );

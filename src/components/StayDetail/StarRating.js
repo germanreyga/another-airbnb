@@ -1,11 +1,11 @@
 import React from "react";
-import star from "../../imgs/star.svg";
+import star from "../../imgs/red-star.svg";
 
-function StarRating(props) {
+function StarRating({ rating, reviews }) {
   return (
     <div className="prop-review">
-      <img src={star} className="star-review" alt="red-star" /> {props.rating} (
-      {props.reviews})
+      <img src={star} className="star-review" alt="red-star" /> {rating} (
+      {reviews})
     </div>
   );
 }

@@ -1,11 +1,9 @@
 import React from "react";
 import { NavDropdown } from "react-bootstrap";
 
-function LanguageButton(props) {
+function LanguageButton({ languageLink, languageName }) {
   return (
-    <NavDropdown.Item href={props.languageLink}>
-      {props.languageName}
-    </NavDropdown.Item>
+    <NavDropdown.Item href={languageLink}>{languageName}</NavDropdown.Item>
   );
 }
 
