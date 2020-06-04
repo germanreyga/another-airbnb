@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container, Col, Row } from "react-bootstrap";
 import BrandLogo from "./BrandLogo";
 import SearchBar from "./SearchBar";
 import globe from "../../imgs/globe.svg";
@@ -13,25 +13,30 @@ function NavMenu(props) {
   ];
 
   return (
-    <Navbar expand="lg" className="nav-menu shadow-sm sticky-top bg-white">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse
-        id="basic-navbar-nav"
-        className="d-flex justify-content-around"
+    <Container className="navbar-container sticky-top">
+      <Navbar
+        expand="lg"
+        className="nav-menu shadow-sm  bg-white row d-flex justify-content-between"
       >
-        <BrandLogo logo={props.logo} />
-        <SearchBar buttonLabels={buttonLabels} />
-        <Nav className="justify-content-end">
-          <LanguageItems languages={props.languages} img={globe} />
-          <Nav.Link href="#help" className="navlink-btn ml">
-            Help
-          </Nav.Link>
-          <Nav.Link href="#signup" className="signup-btn">
-            Signup
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+        <Col sm={12} md={2} className="text-center">
+          <BrandLogo logo={props.logo} className="ml-5" />
+        </Col>
+        <Col sm={12} md={7} className="text-center">
+          <SearchBar buttonLabels={buttonLabels} />
+        </Col>
+        <Col sm={12} md={3} className="d-none d-md-block">
+          <Nav>
+            <LanguageItems languages={props.languages} img={globe} />
+            <Nav.Link href="#help" className="navlink-btn ml">
+              Help
+            </Nav.Link>
+            <Nav.Link href="#signup" className="signup-btn">
+              Signup
+            </Nav.Link>
+          </Nav>
+        </Col>
+      </Navbar>
+    </Container>
   );
 }
 

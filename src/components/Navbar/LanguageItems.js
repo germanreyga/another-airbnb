@@ -4,9 +4,10 @@ import LanguageButton from "./LanguageButton";
 import MenuImage from "./MenuImage";
 
 function LanguageItems(props) {
-  let languageItems = props.languages.map((languageInfo) => {
+  let languageItems = props.languages.map((languageInfo, index) => {
     return (
       <LanguageButton
+        key={index}
         languageLink={languageInfo.languageLink}
         languageName={languageInfo.languageName}
       />

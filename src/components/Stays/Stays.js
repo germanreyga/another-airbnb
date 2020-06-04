@@ -10,7 +10,7 @@ function Stays(props) {
         <Col xs={12} md={7}>
           <ResultList />
         </Col>
-        <Col xs={12} md={5} className="r-pad-0">
+        <Col xs={12} md={5} className="pad-0">
           <LocationMap className="sidebar-item" />
         </Col>
       </Row>

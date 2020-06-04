@@ -4,6 +4,7 @@ import "./App.css";
 import logo from "./logo.svg";
 import NavMenu from "./components/Navbar/NavMenu";
 import StayList from "./components/Stays/Stays";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   let languages = [
@@ -19,7 +20,7 @@ function App() {
         <StayList className="sidebar-item" />
       </div>
 
-      <div>HOLAAAAAAA</div>
+      <Footer />
     </>
   );
 }
